@@ -1,0 +1,20 @@
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna.2026.exe
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna.2026.deps.json
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna.2026.runtimeconfig.json
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna.2026.dll
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna.2026.pdb
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna._2026.Properties.Resources.resources
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.csproj.GenerateResource.cache
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.AssemblyInfoInputs.cache
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.AssemblyInfo.cs
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.dll
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\refint\Urna.2026.dll
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.pdb
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.genruntimeconfig.cache
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\ref\Urna.2026.dll
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna._2026.Apresentacao.resources
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna_imagens\Perna longa.jpg
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna_imagens\Pica Pau Maluco.jpg
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna_imagens\Scooby.jpg
