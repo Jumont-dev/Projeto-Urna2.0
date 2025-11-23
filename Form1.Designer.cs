@@ -38,18 +38,15 @@
             Votação = new Panel();
             FIM = new Panel();
             Final_votacao = new Panel();
+            lbl_3L = new Label();
+            lbl_2L = new Label();
+            lbl_1L = new Label();
             Vencedor = new Label();
             NOVA_VOTAÇÃO = new Button();
             podio2 = new Label();
             podio3 = new Label();
             podio1 = new Label();
             foto_vencedor = new PictureBox();
-            painel_votos3 = new Panel();
-            lbl_3L = new Label();
-            painel_votos2 = new Panel();
-            lbl_2L = new Label();
-            painel_votos1 = new Panel();
-            lbl_1L = new Label();
             encerrar = new Button();
             NOVO_VOTO = new Button();
             _FIM = new Label();
@@ -80,6 +77,7 @@
             Num_3 = new Button();
             Num_2 = new Button();
             Num_1 = new Button();
+            voto_branco = new Label();
             ((System.ComponentModel.ISupportInitialize)ApresentaçãoScooby).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ApresentaçãoPicaPau).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ApresentaçãoPernalonga).BeginInit();
@@ -87,9 +85,6 @@
             FIM.SuspendLayout();
             Final_votacao.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)foto_vencedor).BeginInit();
-            painel_votos3.SuspendLayout();
-            painel_votos2.SuspendLayout();
-            painel_votos1.SuspendLayout();
             panel2.SuspendLayout();
             painel_n2.SuspendLayout();
             painel_n1.SuspendLayout();
@@ -195,20 +190,52 @@
             // Final_votacao
             // 
             Final_votacao.BackColor = SystemColors.InactiveCaption;
+            Final_votacao.Controls.Add(voto_branco);
+            Final_votacao.Controls.Add(lbl_3L);
+            Final_votacao.Controls.Add(lbl_2L);
+            Final_votacao.Controls.Add(lbl_1L);
             Final_votacao.Controls.Add(Vencedor);
             Final_votacao.Controls.Add(NOVA_VOTAÇÃO);
             Final_votacao.Controls.Add(podio2);
             Final_votacao.Controls.Add(podio3);
             Final_votacao.Controls.Add(podio1);
             Final_votacao.Controls.Add(foto_vencedor);
-            Final_votacao.Controls.Add(painel_votos3);
-            Final_votacao.Controls.Add(painel_votos2);
-            Final_votacao.Controls.Add(painel_votos1);
             Final_votacao.Location = new Point(0, 3);
             Final_votacao.Name = "Final_votacao";
             Final_votacao.Size = new Size(1027, 536);
             Final_votacao.TabIndex = 15;
             Final_votacao.Paint += Final_votacao_Paint;
+            // 
+            // lbl_3L
+            // 
+            lbl_3L.BackColor = SystemColors.ControlLightLight;
+            lbl_3L.Location = new Point(608, 301);
+            lbl_3L.Name = "lbl_3L";
+            lbl_3L.Size = new Size(191, 47);
+            lbl_3L.TabIndex = 1;
+            lbl_3L.TextAlign = ContentAlignment.MiddleCenter;
+            lbl_3L.Click += lbl_3L_Click;
+            // 
+            // lbl_2L
+            // 
+            lbl_2L.BackColor = SystemColors.ControlLightLight;
+            lbl_2L.ForeColor = SystemColors.ActiveCaptionText;
+            lbl_2L.Location = new Point(245, 293);
+            lbl_2L.Name = "lbl_2L";
+            lbl_2L.Size = new Size(191, 47);
+            lbl_2L.TabIndex = 1;
+            lbl_2L.TextAlign = ContentAlignment.MiddleCenter;
+            lbl_2L.Click += lbl_2L_Click;
+            // 
+            // lbl_1L
+            // 
+            lbl_1L.BackColor = SystemColors.ControlLightLight;
+            lbl_1L.Location = new Point(434, 140);
+            lbl_1L.Name = "lbl_1L";
+            lbl_1L.Size = new Size(191, 47);
+            lbl_1L.TabIndex = 0;
+            lbl_1L.TextAlign = ContentAlignment.MiddleCenter;
+            lbl_1L.Click += lbl_1L_Click;
             // 
             // Vencedor
             // 
@@ -234,7 +261,7 @@
             // podio2
             // 
             podio2.AutoSize = true;
-            podio2.Location = new Point(278, 353);
+            podio2.Location = new Point(286, 268);
             podio2.Name = "podio2";
             podio2.Size = new Size(101, 15);
             podio2.TabIndex = 7;
@@ -244,7 +271,7 @@
             // podio3
             // 
             podio3.AutoSize = true;
-            podio3.Location = new Point(649, 353);
+            podio3.Location = new Point(650, 274);
             podio3.Name = "podio3";
             podio3.Size = new Size(100, 15);
             podio3.TabIndex = 6;
@@ -253,7 +280,7 @@
             // podio1
             // 
             podio1.AutoSize = true;
-            podio1.Location = new Point(458, 190);
+            podio1.Location = new Point(467, 115);
             podio1.Name = "podio1";
             podio1.Size = new Size(100, 15);
             podio1.TabIndex = 5;
@@ -268,67 +295,6 @@
             foto_vencedor.TabIndex = 0;
             foto_vencedor.TabStop = false;
             foto_vencedor.Click += foto_vencedor_Click;
-            // 
-            // painel_votos3
-            // 
-            painel_votos3.BackColor = SystemColors.ControlLightLight;
-            painel_votos3.Controls.Add(lbl_3L);
-            painel_votos3.Location = new Point(608, 387);
-            painel_votos3.Name = "painel_votos3";
-            painel_votos3.Size = new Size(191, 48);
-            painel_votos3.TabIndex = 9;
-            painel_votos3.Paint += painel_votos3_Paint;
-            // 
-            // lbl_3L
-            // 
-            lbl_3L.BackColor = SystemColors.ControlLightLight;
-            lbl_3L.Location = new Point(0, 0);
-            lbl_3L.Name = "lbl_3L";
-            lbl_3L.Size = new Size(191, 47);
-            lbl_3L.TabIndex = 1;
-            lbl_3L.TextAlign = ContentAlignment.MiddleCenter;
-            lbl_3L.Click += lbl_3L_Click;
-            // 
-            // painel_votos2
-            // 
-            painel_votos2.BackColor = SystemColors.ControlLightLight;
-            painel_votos2.Controls.Add(lbl_2L);
-            painel_votos2.Location = new Point(223, 387);
-            painel_votos2.Name = "painel_votos2";
-            painel_votos2.Size = new Size(191, 48);
-            painel_votos2.TabIndex = 8;
-            painel_votos2.Paint += painel_votos2_Paint;
-            // 
-            // lbl_2L
-            // 
-            lbl_2L.BackColor = SystemColors.ControlLightLight;
-            lbl_2L.ForeColor = SystemColors.ActiveCaptionText;
-            lbl_2L.Location = new Point(0, 1);
-            lbl_2L.Name = "lbl_2L";
-            lbl_2L.Size = new Size(191, 47);
-            lbl_2L.TabIndex = 1;
-            lbl_2L.TextAlign = ContentAlignment.MiddleCenter;
-            lbl_2L.Click += lbl_2L_Click;
-            // 
-            // painel_votos1
-            // 
-            painel_votos1.BackColor = SystemColors.ControlLightLight;
-            painel_votos1.Controls.Add(lbl_1L);
-            painel_votos1.Location = new Point(409, 236);
-            painel_votos1.Name = "painel_votos1";
-            painel_votos1.Size = new Size(191, 49);
-            painel_votos1.TabIndex = 9;
-            painel_votos1.Paint += painel_votos1_Paint;
-            // 
-            // lbl_1L
-            // 
-            lbl_1L.BackColor = SystemColors.ControlLightLight;
-            lbl_1L.Location = new Point(0, 0);
-            lbl_1L.Name = "lbl_1L";
-            lbl_1L.Size = new Size(191, 47);
-            lbl_1L.TabIndex = 0;
-            lbl_1L.TextAlign = ContentAlignment.MiddleCenter;
-            lbl_1L.Click += lbl_1L_Click;
             // 
             // encerrar
             // 
@@ -647,6 +613,15 @@
             Num_1.UseVisualStyleBackColor = true;
             Num_1.Click += Num_1_Click;
             // 
+            // voto_branco
+            // 
+            voto_branco.BackColor = SystemColors.ControlLightLight;
+            voto_branco.Location = new Point(12, 472);
+            voto_branco.Name = "voto_branco";
+            voto_branco.Size = new Size(191, 47);
+            voto_branco.TabIndex = 18;
+            voto_branco.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Apresentacao
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -674,9 +649,6 @@
             Final_votacao.ResumeLayout(false);
             Final_votacao.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)foto_vencedor).EndInit();
-            painel_votos3.ResumeLayout(false);
-            painel_votos2.ResumeLayout(false);
-            painel_votos1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             painel_n2.ResumeLayout(false);
@@ -727,9 +699,6 @@
         private Label podio1;
         private PictureBox foto_vencedor;
         private Button NOVA_VOTAÇÃO;
-        private Panel painel_votos1;
-        private Panel painel_votos3;
-        private Panel painel_votos2;
         private Panel painel_n2;
         private Panel painel_n1;
         private Panel painel_partido;
@@ -743,5 +712,6 @@
         private Label lbl_3L;
         private Label lbl_2L;
         private Label Vencedor;
+        private Label voto_branco;
     }
 }

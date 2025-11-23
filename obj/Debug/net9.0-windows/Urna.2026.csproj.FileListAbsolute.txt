@@ -18,3 +18,4 @@ C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-wi
 C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna_imagens\Perna longa.jpg
 C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna_imagens\Pica Pau Maluco.jpg
 C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\bin\Debug\net9.0-windows\Urna_imagens\Scooby.jpg
+C:\Users\Administrador\OneDrive\Desktop\Documentos\Urna.2026\obj\Debug\net9.0-windows\Urna.2026.sourcelink.json

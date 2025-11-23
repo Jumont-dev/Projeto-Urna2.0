@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Urna.2026")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eebc8cbf239cbc6370692d36d80a76e4bfc3749f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Urna.2026")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Urna.2026")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

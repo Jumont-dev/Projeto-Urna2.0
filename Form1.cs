@@ -228,9 +228,14 @@ namespace Urna._2026
     {
         ("SCOOBY DOO (17)", votos17),
         ("PICA PAU (13)", votos13),
-        ("PERNALONGA (22)", votos22),
-        ("BRANCO", votosBranco)
+        ("PERNALONGA (22)", votos22)
     };
+            var branco = new List<(string nome, int votos)>
+            {
+                 ("BRANCO", votosBranco)
+            };
+
+            voto_branco.Text = $"{branco[0].nome}: {branco[0].votos}";
 
             ranking = ranking.OrderByDescending(r => r.votos).ToList();
 
@@ -247,6 +252,46 @@ namespace Urna._2026
                 foto_vencedor.Image = Image.FromFile(@"Urna_imagens/Perna longa.jpg");
             else
                 foto_vencedor.Image = null;
+
+            foto_vencedor.Visible = true;
+
+
+            // Verificar empates
+
+            if (ranking[0].votos == 0 && ranking[1].votos == 0 && ranking[2].votos == 0)
+            {
+                lbl_1L.Text = "Sem votos";
+                lbl_2L.Text = "Sem votos";
+                lbl_3L.Text = "Sem votos";
+
+                foto_vencedor.Visible = false;
+
+                MessageBox.Show("Houve somente votos em branco", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else
+            {
+                if (ranking[0].votos == ranking[1].votos && ranking[0].votos == ranking[2].votos)
+                {                
+                    lbl_1L.Text = "Empate";
+                    lbl_2L.Text = "Empate";
+                    lbl_3L.Text = "Empate";
+
+                    foto_vencedor.Visible = false;
+                    MessageBox.Show("Houve um empate entre todos os candidatos!", "Empate", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else if (ranking[0].votos == ranking[1].votos)
+                { 
+                    lbl_1L.Text = "Empate";
+                    lbl_2L.Text = "Empate";
+                    foto_vencedor.Visible = false;
+                    MessageBox.Show($"Houve um empate entre {ranking[0].nome} e {ranking[1].nome} com o total de {ranking[0].votos} ", "Empate", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+
+
+
         }
 
         private void foto_vencedor_Click(object sender, EventArgs e)
@@ -313,5 +358,7 @@ namespace Urna._2026
         {
 
         }
+
+     
     }
 }
